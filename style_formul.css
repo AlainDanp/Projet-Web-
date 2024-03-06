@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Agency FB", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("assest/Cesi.jpg") ;
+    background-size: cover;
+    background-position: center ;
+}
+
+.bodo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("assest/Cesi2.jpg") ;
+    background-size: cover;
+    background-position: center ;
+}
+.container{
+    position: relative;
+    width: 780px;
+    height: 495px;
+    background: transparent;
+    border: 3px solid #FFFFFF ;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.conent{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conent h2{
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 600;
+}
+.conent hr{
+    width: 80px;
+    height: 6px;
+    background: #03fe78;
+    border-radius: 25px;
+    margin-left: 39%;
+    margin-top: 10px;
+    border: 0;
+}
+.box{
+    width: 100%;*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Agency FB", sans-serif;
+}
+    .box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 0;
+        outline: none;
+        border-bottom: 3px solid #03fe78;
+        color: #FFF518;
+        font-size: 28px;
+
+    }
+    ::placeholder{
+        font-size: 15px;
+        color: #ffffff ;
+    }
+    .btn{
+        width: 100%;
+        height: 50px;
+        background: #03fe78;
+        color: white;
+        border: 0;
+        font-size: 18px;
+        letter-spacing: 3px;
+        border-radius: 40px;
+        margin: 30px 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .inputBox{
+        color: #FFF518;
+        position: relative;
+        width: 300px;
+        margin-top: 35px;
+        font-size: 1.1em;
+    }
+    .inputBox input{
+        width: 100%;
+        padding: 20px 10px 10px;
+        background: transparent;
+        border-color: #03fe78 ;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: 1em;
+        outline: none;
+        color: #03fe78;
+    }
+    input[type="submit"]{
+        border: 1px solid #fff;
+        background: #03fe78;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    height: 60px;
+    margin: 10px;
+}
+.box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-bottom: 3px solid #03fe78;
+    color: #ffffff;
+    font-size: 28px;
+
+}
+::placeholder{
+    font-size: 17px;
+    color: #ffffff ;
+}
+.btn{
+    width: 100%;
+    height: 60px;
+    background: #FFF518;
+    color: white;
+    border: 0;
+    font-size: 25px;
+    letter-spacing: 3px;
+    border-radius: 40px;
+    margin: 30px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #03fe78;
+}
+.inputBox{
+    color: white;
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+    font-size: 1.1em;
+}
+.inputBox input{
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border-color: #03fe78 ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1em;
+    outline: none;
+    color: #03fe78;
+}
+input[type="submit"]{
+    border: 1px solid #fff;
+    background: #03fe78;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/*-----------------*/
+.text{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: -80px;
+    right: -50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 90px;
+}
+.text h2 {
+    font-size: 35px;
+    color: #03fe78;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.text p{
+    color: #03fe78;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+.drop{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 0;
+    right: 0;
+    background: #ffffff;
+    transform: rotate(12deg) skewY(40deg);
+    transform-origin: bottom right ;
+}
+.lien{
+    color: #FFFFFF;
+    background: #03fe78;
+    position: absolute;
+    top: 22.8em;
+    left: 10em;
+}
+.lien2{
+    color: #FFFFFF;
+    background: #03fe78;
+    position: absolute;
+    top: 24.8em;
+    left: 1em;
+}
