@@ -19,7 +19,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url("assest/Cesi2.jpg") ;
+    background-image: url("assest/Cesi5.jpg") ;
     background-size: cover;
     background-position: center ;
 }
@@ -49,8 +49,8 @@ body{
 .conent hr{
     width: 80px;
     height: 6px;
-    background: #03fe78;
-    border-radius: 25px;
+    background: #FFF518;
+    border-radius: 5px;
     margin-left: 39%;
     margin-top: 10px;
     border: 0;
@@ -75,7 +75,10 @@ body{
     }
     ::placeholder{
         font-size: 15px;
-        color: #ffffff ;
+        color: #000000 ;
+        position: absolute;
+        left: 20px;
+        top: 20px;
     }
     .btn{
         width: 100%;
@@ -121,19 +124,19 @@ body{
     margin: 10px;
 }
 .box input{
-    width: 100%;
+    width: 90%;
     height: 100%;
-    background: transparent;
-    border: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px 20px 20px 2px;
     outline: none;
-    border-bottom: 3px solid #03fe78;
-    color: #ffffff;
+    border: 3px solid #FFF518;
+    color: #000000;
     font-size: 28px;
 
 }
 ::placeholder{
     font-size: 17px;
-    color: #ffffff ;
+    color: #000000 ;
 }
 .btn{
     width: 100%;
@@ -150,7 +153,8 @@ body{
 }
 
 .btn:hover {
-    background: #03fe78;
+    background: rgba(255, 245, 24, 0.7);
+
 }
 .inputBox{
     color: white;
@@ -194,13 +198,13 @@ input[type="submit"]{
 }
 .text h2 {
     font-size: 35px;
-    color: #03fe78;
+    color: #000000;
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
 }
 .text p{
-    color: #03fe78;
+    color: #000000;
     font-size: 18px;
     margin-top: 10px;
     text-align: center;
@@ -216,15 +220,15 @@ input[type="submit"]{
     transform-origin: bottom right ;
 }
 .lien{
-    color: #FFFFFF;
-    background: #03fe78;
+    color: #000000;
+    background: #FFFFFF;
     position: absolute;
     top: 22.8em;
     left: 10em;
 }
 .lien2{
-    color: #FFFFFF;
-    background: #03fe78;
+    color: #000000;
+    background: #FFFFFF;
     position: absolute;
     top: 24.8em;
     left: 1em;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="widht=device-width, initial-scale=1.0">
@@ -12,18 +12,18 @@
         <div class="conent">
             <h2> Inscription </h2>
             <hr />
-            <form>
+            <form action="" method="post">
                 <div class="box">
-                    <input type="text" placeholder="Nom d'utilisateur. EX: JOHSON" required>
+                    <input type="text" placeholder="Nom d'utilisateur. EX: JOHSON" required name="pseudo">
                 </div>
                 <div class="box">
-                    <input type="email" placeholder="Prénom d'util. EX: Alain" required>
+                    <input type="email" placeholder="Prénom d'util. EX: Alain" required name="email">
                 </div>
                 <div class="box">
-                    <input type="text" placeholder="Localisation. Ex: Yaoundé" required>
+                    <input type="text" placeholder="Localisation. Ex: Yaoundé" required name="localisation">
                 </div>
                 <div class="box">
-                    <input type="password" placeholder="Mot de passe" required>
+                    <input type="password" placeholder="Mot de passe" required name="password">
                 </div>
                 <div>
                 <a href="connexion.php" class="lien"> j'ai un compte</a>
@@ -32,7 +32,7 @@
             </form>
         </div>
         <div class="text">
-            <img src="assest/">
+            <img src="assest/cesiog.jpeg">
             <h2> Bienvenue</h2>
             <p> sur notre page d'inscripition </p>
         </div>
