@@ -4,6 +4,7 @@ const { connects } = require('./dbConnection');
 const produitsRouter = require('./router_Products');
 const connexionRouter = require('./router_connexion');
 const ideaRouter = require('./router_idée');
+const eventsRouter = require('./router_evenements');
 
 
 const app = express();
@@ -26,6 +27,7 @@ app.use(express.json());
 
 app.use('/produits', produitsRouter);
 app.use('/connexion',connexionRouter);
+app.use('/evenements',eventsRouter);
 
 app.use('/idée',ideaRouter);
 
