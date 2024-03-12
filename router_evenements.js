@@ -93,7 +93,7 @@ router.post('/ajouter', (req, res, next) => {
             next(err);
             return;
         }
-        res.json({ message: 'Événement ajouté avec succès' });
+        res.json({ message: 'Événement ajouté avec succès,trop fort' });
     });
 });
 

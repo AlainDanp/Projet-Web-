@@ -7,7 +7,7 @@ router.post('/nouvelle-idee', (req, res, next) => {
     const pseudo = req.session.user.pseudo;
 
     // Insertion de l'idée dans la base de données
-    connection.query('INSERT INTO boite_idee (nom, description, pseudo) VALUES (?, ?, ?)', [nom, description, pseudo], (err, result) => {
+    connection.query('INSERT INTO boite_idee (nom, description,pseudo ) VALUES (?, ?, ?)', [nom, description, pseudo], (err, result) => {
         if (err) {
             next(err);
             return;
