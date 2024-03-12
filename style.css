@@ -1,0 +1,154 @@
+h1{
+    font-size: 4em;
+    text-align: left;
+    text-decoration: underline;
+    font-family: "Times New Roman", sans-serif;
+    font-style: italic;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+    font-style: italic;
+
+    color: white;
+}
+.haut{
+
+    padding: 55px;
+}
+
+body{
+    background-image: url("images/vig.jpg");
+    background-size: cover;
+}
+li{
+    color: white;
+}
+
+p{
+    color: white;
+    padding: 10px;
+}
+
+.bouton{
+    font-size: 25px;
+    font-family: "Times New Roman",sans-serif;
+    text-align: right;
+    border: 2px #000000 double;
+    background: rgb(128, 128, 128);
+    box-shadow: 2px 2px 0px rgba(0,0,0.5);
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+.bannierè{
+    padding: 10px;
+    background-image: url("images/veg.jpg");
+    background-size: cover;
+    border: 5px #ffffff double;
+}
+.seco_banierè{
+    margin: 15px;
+    background-image: url("images/veg.jpg");
+    background-size: cover;
+}
+.element1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    padding: 25px;
+}
+.imag_acc{
+    gap: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 4px 25px rgba(0,0,0,0.5);
+}
+img{
+    border-radius: 257px 257px 257px 257px;
+    border: 7px #ffffff solid;
+}
+img a {
+    display: block;
+    margin: 20px;
+}
+.luma:hover{
+    border-radius: 200px 200px 200px 200px;
+    box-shadow: 4px 2px 25px rgba(200, 200, 200, 0.8)
+}
+footer{
+
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+.element2 img{
+    border: none;
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+
+}
+.element1 div{
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+    margin-top: -30px;
+}
+.element1 h2:hover ~ .line{
+    transform: scaleX(1);
+}
+.line{
+    width: 200px;
+    border: 1px solid white;
+}
+.element2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.barre_d{
+    font-family: "Times New Roman",sans-serif;
+    font-size: 1em;
+    opacity: 0.7;
+    border-radius: 10px;
+    position: absolute;
+    right: 120px;
+    top: 270px;
+    width: 250px;
+    height: 20px;
+}
+.grid-container img{
+    border: 9px #ffffff double;
+    border-radius: 0;
+    width: 90%;
+    height: 90%;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.entrepo{
+    padding: 40px;
+    justify-content: center;
+}
+.ENT1{
+    margin-bottom: 10px;
+}
+.RES1{
+    margin-bottom: 10px;
+}
+.DES1{
+    margin-bottom: 10px;
+}
+.nosplat{
+    text-decoration: underline;
+    font-size: 25px;
+    text-align: center;
+}

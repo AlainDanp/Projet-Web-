@@ -8,8 +8,6 @@ const body = document.querySelector("body"),
     toggle.addEventListener("click",() => {
       sidebar.classList.toggle("close");
     });
-
-
     modeSwithc.addEventListener("click",() => {
         body.classList.toggle("dark");
 

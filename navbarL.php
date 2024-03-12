@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Title</title>
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
-    <title>Navabar</title>
-    <link href="navabar.css" rel="stylesheet">
+    <link href="navabarsite.css" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
-                <span class="image">
-                  <img src="assest/cesi.svg" alt="cesi">
-                </span>
+                    <span class="image">
+                      <img src="assest/cesi.svg" alt="cesi">
+                    </span>
                 <div class="text header-text">
                     <span class="name">Cesi</span>
                     <span class="profession"> Ecole d'ingégnieur</span>
@@ -22,12 +24,11 @@
 
             <i class="bx bx-chevron-right toggle"></i>
         </header>
-        <div class="men-bar">
+        <div class="menu-bar">
             <div class="menu">
-                <li class="search-box ">
-                        <i class="bx bx-search icon"></i>
-                        <input type="search" placeholder=" Recherche...">
-                    </a>
+                <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="search" placeholder=" Recherche...">
                 </li>
                 <ul class="menu-links">
                     <li class="nav-links">
@@ -77,11 +78,8 @@
                     <span class="mode-text text"> Mode Nuit</span>
                     <div class="toggle-switch">
                         <span class="switch"></span>
-
                     </div>
-
                 </li>
-
             </div>
         </div>
     </nav>
@@ -89,9 +87,10 @@
     <section class="home">
         <div class="text"> Navbar</div>
     </section>
+    <section class="home">
+        <?php include "hh.php" ?>
+    </section>
 
     <script src="navarbar.js"></script>
-
 </body>
 </html>
-

@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 :root{
     --body-color: #E4E9F7;
@@ -13,8 +16,6 @@
     --primary-color-light: #F6F5FF;
     --toggle-color:#DDD;
     --text-color: #000000;
-
-
     --tran-02 :all 0.2s ease;
     --tran-03 :all 0.3s ease;
     --tran-04 :all 0.4s ease;
@@ -49,7 +50,7 @@
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
-    transition: var(--tran-04);
+    transition: var(--tran-03);
     white-space: nowrap;
     opacity: 1;
 }
@@ -87,16 +88,20 @@
 body.dark .sidebar header .toggle{
     transform: rotate(180deg);
     color: var(--text-color);
-
 }
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+
 .search-box input{
     height: 100%;
     width: 100%;
     outline: none;
     border: none;
+    font-size: 16px;
+    font-weight: 500;
     border-radius: 20px;
     background: var(--primary-color-light);
-
 }
 .sidebar li a{
     height: 100%;
@@ -173,37 +178,37 @@ body.dark{
 .sidebar.close header .toggle{
     transform: translateY(-50%);
 }
-.sidebar .men-bar{
+.sidebar .menu-bar{
     height: calc(100% - 50px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.men-bar .mode{
+.menu-bar .mode{
     position: relative ;
     border-radius: 40px 40px 40px 40px;
     background: var(--primary-color-light);
 }
-.men-bar .mode .moon-sun{
+.menu-bar .mode .moon-sun{
    height: 50px;
     width: 60px ;
     display: flex;
     align-items: center;
 }
-.men-bar .mode i{
+.menu-bar .mode i{
     position: absolute ;
     transition: var(--tran-03);
 }
-.men-bar .mode i.sun{
+.menu-bar .mode i.sun{
     opacity: 0;
 }
-body.dark .men-bar .mode i.sun{
+body.dark .menu-bar .mode i.sun{
     opacity: 1;
 }
-body.dark .men-bar .mode i.moon{
+body.dark .menu-bar .mode i.moon{
     opacity: 0;
 }
-.men-bar .mode .toggle-switch{
+.menu-bar .mode .toggle-switch{
     position: absolute;
     right: 0;
     display: flex;
@@ -246,19 +251,21 @@ body.dark .sidebar header .toggle{
 }
 .home{
     position: relative;
-    height: 100vh;
+    height: 100%;
     left: 250px;
     width: calc(100% - 250px);
-    background: var(--body-color);
-    transition: var(--tran-05);
+    /*background-color: red;*/
+    transition: var(--tran-03);
+
 }
-.homej .text{
+.home .text{
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
     padding: 8px 40px;
 }
 .sidebar.close ~ .home{
-    height: 88px;
+    left: 88px;
+    height: 100%;
     width: calc(100% - 88px);
 }

@@ -4,19 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce66b6d2-00a5-45c3-8f52-52eb626cd87c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/navabar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navabar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navarbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5263c6a6-2acc-4ff3-b928-c59a8a0c3060.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5263c6a6-2acc-4ff3-b928-c59a8a0c3060/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5263c6a6-2acc-4ff3-b928-c59a8a0c3060/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5263c6a6-2acc-4ff3-b928-c59a8a0c3060/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5263c6a6-2acc-4ff3-b928-c59a8a0c3060/storage_v2/_src_/schema/projet_web.YQF7iw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5263c6a6-2acc-4ff3-b928-c59a8a0c3060/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+    <list default="true" id="ce66b6d2-00a5-45c3-8f52-52eb626cd87c" name="Changes" comment="pRojet Web">
+      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hh.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nabarR.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navabaruser.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navabar.css" beforeDir="false" afterPath="$PROJECT_DIR$/navabarsite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navabar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navarbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/navarbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbarL.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style_formul.css" beforeDir="false" afterPath="$PROJECT_DIR$/style_formul.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -44,9 +51,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\Program Files\php-8.3.3-nts-Win32-vs16-x64\php.exe" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2dOt1Wy1VCXcNW9D14Pn0Po7IGf" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,20 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/danpj/OneDrive/Documents/X2/Module Dev WEb/PHP envi/Corbeille",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/danpj/OneDrive/Documents/X2/Module Dev WEb/PHP envi/Corbeille&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\pJwEB" />
@@ -89,11 +98,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709890738990</updated>
-      <workItem from="1709890740180" duration="9344000" />
+      <workItem from="1709890740180" duration="33417000" />
+      <workItem from="1710103321435" duration="12861000" />
     </task>
+    <task id="LOCAL-00001" summary="pRojet Web">
+      <option name="closed" value="true" />
+      <created>1709904044442</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709904044442</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pRojet Web">
+      <option name="closed" value="true" />
+      <created>1709904090293</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709904090293</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pRojet Web" />
+    <option name="LAST_COMMIT_MESSAGE" value="pRojet Web" />
   </component>
 </project>

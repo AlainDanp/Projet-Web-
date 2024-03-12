@@ -8,6 +8,7 @@
 </head>
 <body class="bodo">
     <div class="container">
+        <div class="sombre"></div>
         <div class="drop"></div>
         <div class="conent">
             <h2> Inscription </h2>
