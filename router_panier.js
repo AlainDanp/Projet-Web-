@@ -5,8 +5,13 @@ const router = express.Router();
 
 // Route pour ajouter un produit au panier
 router.post('/ajouter-au-panier', (req, res, next) => {
-    const { id_utilisateur, id_produit, quantite, prix } = req.body;
-    connection.query('INSERT INTO panier (id_utilisateur, id_produit, quantite, prix) VALUES (?, ?, ?, ?)', [id_utilisateur, id_produit, quantite, prix], (err, result) => {
+    const { id_utilisateur, id_produit, quantite, prix,status } = req.body;
+    console.log(id_produit);
+    console.log(id_utilisateur);
+    console.log(quantite);
+    console.log( prix);
+    console.log(status);
+    connection.query('CALL ajoutPanier(?, ?, ?, ?, ?)', [prix, quantite, id_utilisateur, id_produit, status], (err, result) => {
         if (err) {
             next(err);
             return;

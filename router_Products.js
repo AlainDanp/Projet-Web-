@@ -29,15 +29,15 @@ router.get('/categorie/:nom_categorie', (req, res, next) => {
 
 // Route pour ajouter un produit
 router.post('/ajouter', (req, res, next) => {
-  const { nom, prix, description, image, quantite, category } = req.body;
-  connection.query('INSERT INTO produits (nom, prix, description, image, quantite, nom_categorie) VALUES (?, ?, ?, ?, ?, ?)', [nom, prix, description, image, quantite, category], (err, result) => {
+  const { nom, prix, description, image, nom_categorie,Quantite } = req.body;
+  connection.query('CALL ajoutProduit(?, ?, ?, ?, ?, ?)', [nom, prix, description, image,nom_categorie, Quantite ], (err, result) => {
     if (err) {
       next(err);
       return;
     }
     res.json({ message: 'Produit ajouté avec succès' });
   });
-});
+})
 
 // Route pour afficher la quantité totale de produits par catégorie
 router.get('/quantite-par-categorie', (req, res, next) => {

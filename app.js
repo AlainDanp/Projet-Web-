@@ -1,5 +1,6 @@
 const express = require('express');
 const session = require('express-session');
+
 const { connects } = require('./dbConnection');
 const produitsRouter = require('./router_Products');
 const connexionRouter = require('./router_connexion');
@@ -21,15 +22,15 @@ app.use('/test', (req, res, next) => {
   });
 
 });
-
 app.use(express.json());
+
 
 // Utilisation du routeur pour les produits
 app.use('/produits', produitsRouter);
 app.use('/connexion',connexionRouter);
 app.use('/evenements',eventsRouter);
 app.use('/panier',panierRouter);
-app.use('/idée',ideaRouter);
+app.use('/idee',ideaRouter);
 
 // Utilisation du routeur pour les images
 app.use('/images', imageRouter);

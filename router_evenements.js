@@ -81,19 +81,17 @@ router.put('/expiration', (req, res, next) => {
 // Route pour ajouter un événement
 router.post('/ajouter', (req, res, next) => {
     const { nom, description, date_debut, date_fin } = req.body;
-    const evenement = {
+    const evenement = [
         nom,
         description,
-        date_debut: formatDate(date_debut),
-        date_fin: formatDate(date_fin)
-    };
+        formatDate(date_debut),
+        formatDate(date_fin)
+    ];
 
-    connection.query('INSERT INTO evenements SET ?', evenement, (err, result) => {
-        if (err) {
-            next(err);
-            return;
-        }
-        res.json({ message: 'Événement ajouté avec succès,trop fort' });
+    console.log(evenement);
+    connection.query('CALL ajoutEvenements(?, ?, ?, ?)', evenement, (err, row, field) => {
+        if (err) throw err;
+        res.json({ message: 'Événement ajouté avec succès,trop fort' + row });
     });
 });
 
