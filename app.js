@@ -8,6 +8,8 @@ const ideaRouter = require('./router_idée');
 const eventsRouter = require('./router_evenements');
 const panierRouter = require('./router_panier');
 const imageRouter = require('./router_image'); // Ajoutez cette ligne avec le chemin réel de votre fichier de routeur d'images
+const usersRouter = require('./router_users');
+const likeRouter = require('./router_like');
 
 const app = express();
 const connection = connects(); // Crée une connexion à la base de données
@@ -31,8 +33,11 @@ app.use('/connexion',connexionRouter);
 app.use('/evenements',eventsRouter);
 app.use('/panier',panierRouter);
 app.use('/idee',ideaRouter);
+app.use('/users',usersRouter);
+app.use('/likes',likeRouter);
 
 // Utilisation du routeur pour les images
 app.use('/images', imageRouter);
+
 
 module.exports = app;
