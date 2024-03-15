@@ -5,17 +5,14 @@ const router = express.Router();
 
 // Route pour ajouter un produit au panier
 router.post('/ajouter-au-panier', (req, res, next) => {
-    const { id_utilisateur, id_produit, quantite, prix,status } = req.body;
+    const { id_utilisateur, id_produit, Quantite, prix,status } = req.body;
     console.log(id_produit);
     console.log(id_utilisateur);
-    console.log(quantite);
+    console.log(Quantite);
     console.log( prix);
     console.log(status);
-    connection.query('CALL ajoutPanier(?, ?, ?, ?, ?)', [prix, quantite, id_utilisateur, id_produit, status], (err, result) => {
-        if (err) {
-            next(err);
-            return;
-        }
+    connection.query('CALL ajoutPanier(?, ?, ?, ?, ?)', [prix, Quantite, id_utilisateur, id_produit, status], (err, result) => {
+        if (err) throw err
         res.json({ message: 'Produit ajouté au panier avec succès,trop fort' });
     });
 });
@@ -62,7 +59,7 @@ router.delete('/delete_panier/:id_utilisateur/:id_produit', (req, res, next) => 
     const id_utilisateur = req.params.id_utilisateur;
     const id_produit = req.params.id_produit;
 
-    connection.query('DELETE FROM panier WHERE id_utilisateur = ? AND id_produit = ?', [id_utilisateur, id_produit], (err, result) => {
+    connection.query('CALL delete_panier(?, ?)', [id_utilisateur, id_produit], (err, result) => {
         if (err) {
             next(err);
             return;

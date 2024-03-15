@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const {createToken, verifyToken} = require("./token");
 
 // Route pour l'authentification de l'utilisateur
 router.post('/login', (req, res, next) => {
@@ -13,21 +14,17 @@ router.post('/login', (req, res, next) => {
     }
 
     if (rows.length === 1) {
+
       // Authentification réussie
 
       // Récupération des informations de l'utilisateur
       const utilisateur = rows[0];
 
-      // Stockage des informations de l'utilisateur dans la session
-      req.session.user = {
-        id_utilisateur: utilisateur.id_utilisateur,
-        pseudo: utilisateur.pseudo,
-      };
-
-      // Définition de l'expiration de la session après 1 heure
-      req.session.cookie.expires = new Date(Date.now() + 1 * 60 * 60 * 1000); // 1 heure
-
-      res.json({ message: 'Authentification réussie' });
+      // Appel de la fonction createToken pour générer le token
+      const token = createToken(req, res, () => {
+      });
+      // Renvoyer le token dans la réponse
+      res.json({ token: token });
     } else {
       // Authentification échouée
       res.json({ message: 'Authentification échouée' });
@@ -36,15 +33,10 @@ router.post('/login', (req, res, next) => {
 });
 
 // Route pour la déconnexion de l'utilisateur
-router.post('/logout', (req, res, next) => {
-  // Suppression de la session utilisateur
-  req.session.destroy((err) => {
-    if (err) {
-      next(err);
-      return;
-    }
-    res.json({ message: 'Déconnexion réussie' });
-  });
+router.post('/logout', verifyToken, (req, res, next) => {
+  // Invalidating the token
+  req.token = null;
+  res.json({ message: 'Déconnexion réussie' });
 });
 
 module.exports = router;

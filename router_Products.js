@@ -17,7 +17,7 @@ const upload = multer({ storage: storage });
 
 // Route pour afficher tous les produits
 router.get('/all', (req, res, next) => {
-  connection.query('SELECT * FROM produits', (err, rows, fields) => {
+  connection.query('CALL get_all_produits()', (err, rows, fields) => {
     if (err) {
       next(err);
       return;
@@ -29,7 +29,7 @@ router.get('/all', (req, res, next) => {
 // Route pour afficher les produits par catégorie
 router.get('/categorie/:nom_categorie', (req, res, next) => {
   const { nom_categorie } = req.params;
-  connection.query('SELECT * FROM produits WHERE nom_categorie = ?', [nom_categorie], (err, rows, fields) => {
+  connection.query('CALL get_produits_by_categorie(?)', [nom_categorie], (err, rows, fields) => {
     if (err) {
       next(err);
       return;
@@ -61,7 +61,7 @@ router.post('/ajouter', upload.single('image'), (req, res, next) => {
 
 // Route pour afficher la quantité totale de produits par catégorie
 router.get('/quantite-par-categorie', (req, res, next) => {
-  connection.query('SELECT nom_categorie, SUM(quantite) AS quantite_totale FROM produits GROUP BY nom_categorie', (err, rows, fields) => {
+  connection.query('CALL get_quantites_par_categorie()', (err, rows, fields) => {
     if (err) {
       next(err);
       return;
