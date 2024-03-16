@@ -14,7 +14,7 @@
         <header>
             <div class="image-text">
                     <span class="image">
-                      <img src="assest/cesi.svg" alt="cesi">
+                      <img src="assets/cesi.svg" alt="cesi">
                     </span>
                 <div class="text header-text">
                     <span class="name">Cesi</span>
@@ -84,13 +84,17 @@
         </div>
     </nav>
 
+<!--    <section class="home">-->
+<!--        <div class="text"> Navbar</div>-->
+<!--    </section>-->
     <section class="home">
-        <div class="text"> Navbar</div>
+        <div> <?php include"home.php" ?></div>
     </section>
     <section class="home">
-        <?php include "hh.php" ?>
+        <div> <?php include"footer.php" ?></div>
     </section>
 
     <script src="navarbar.js"></script>
+
 </body>
 </html>

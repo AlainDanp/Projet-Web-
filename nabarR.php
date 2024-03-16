@@ -10,11 +10,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-<nav>
+<nav id="navio">
     <ul>
         <li>
             <a href="#" class="logo">
-                <img src="assest/cesi.svg" alt="">
+                <img src="assets/cesi.svg" alt="">
                 <span class="nav-item"> Code info</span>
             </a>
         </li>

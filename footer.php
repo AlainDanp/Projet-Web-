@@ -11,7 +11,7 @@
 </head>
 </head>
 <body>
-<footer class="footer home">
+<footer class="footer">
     <div class="container">
         <div class="row">
             <div class="footer-col">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <img src="assest/cesi.svg" class="logo">
+        <img src="assets/cesi.svg" class="logo">
     </div>
 </footer>
 </body>

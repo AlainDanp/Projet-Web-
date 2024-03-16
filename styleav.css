@@ -1,0 +1,47 @@
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.rectangle1 {
+    width: 1200px;
+    height: 50px;
+    padding: 20px;
+    background-color: #7e7d7d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+}
+
+.image-container {
+    margin-left: 50px;
+    width: 100px; /* taille du cercle */
+    height: 100px; /* taille du cercle */
+    border-radius: 50%; /* forme du cercle */
+    overflow: hidden; /* masque les parties dépassant du cercle */
+    border: 2px solid black; /* bordure noire */
+}
+
+.image-container img {
+    width: 100%; /* assure que l'image remplit le conteneur */
+    height: 100%; /* assure que l'image remplit le conteneur */
+    object-fit: cover; /* ajuste la taille de l'image pour remplir le conteneur */
+}
+
+.rectangle {
+    width: 15cm;
+    height: 2cm;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1cm auto;
+}
+
+.rectangle h2 {
+    font-weight: bold;
+}

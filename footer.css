@@ -43,7 +43,7 @@ ul{
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: #ffdd00;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -54,7 +54,6 @@ ul{
 .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
     text-decoration: none;
     font-weight: 300;
     color: #bbbbbb;
