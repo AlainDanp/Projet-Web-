@@ -1,0 +1,95 @@
+
+.rectangle1 {
+    width: 1200px;
+    height: 50px;
+    padding: 20px;
+    background-color: #cecec8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+}
+
+#header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13cm;
+    height: 3cm;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    margin-left: 50px;
+    width: 100px; /* taille du cercle */
+    height: 100px; /* taille du cercle */
+    border-radius: 50%; /* forme du cercle */
+    overflow: hidden; /* masque les parties dépassant du cercle */
+    border: 2px solid black; /* bordure noire */
+}
+
+.image-container img {
+    width: 100%; /* assure que l'image remplit le conteneur */
+    height: 100%; /* assure que l'image remplit le conteneur */
+    object-fit: cover; /* ajuste la taille de l'image pour remplir le conteneur */
+}
+#header1 h1 {
+    font-weight: bold;
+}
+
+#header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1cm;
+}
+
+.rectangle {
+    width: 15cm;
+    height: 5cm;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+}
+
+.rectangle img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.rectangle h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#rectangle1:hover {
+    border-top-color:  orange;
+}
+
+
+#rectangle2 {
+    border-top: 1cm solid yellow;
+    transition: border-top-color 0.5s;
+}
+
+#rectangle2:hover {
+    border-top-color: orange;
+}
+#rectangle1 {
+    border-top: 1cm solid yellow;
+    transition: border-top-color 0.5s;
+}
+#rectangle2 {
+    z-index: 2;
+}
+
+#rectangle1 {
+    z-index: 1;
+}
