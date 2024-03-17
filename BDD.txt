@@ -1,0 +1,100 @@
+create TABLE utilisateurs(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  pseudo varchar(255) not null,
+  email varchar(255) not null,
+  password varchar(255) not null,
+  image VARCHAR(255),
+  statut INT DEFAULT 0 CHECK (statut IN (0, 1, 2))
+);
+
+
+CREATE TABLE boite_idee(
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   nom VARCHAR(255),
+   description VARCHAR(255),
+   pseudo_utilisateur INT,
+   FOREIGN KEY (pseudo_utilisateur) REFERENCES utilisateurs(pseudo)
+);
+
+CREATE TABLE evenements(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255),
+    description VARCHAR(255),
+    date_debut DATE,
+    date_fin DATE,
+    status INT DEFAULT 0 CHECK (statut IN (0, 1))
+);
+
+
+CREATE TABLE categorie(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255)
+);
+
+CREATE TABLE produits(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255),
+    Prix INT,
+    description VARCHAR(255),
+    image VARCHAR(255),
+    Quantite INT,
+    nom_categorie VARCHAR(255),
+    FOREIGN KEY (nom_categorie) REFERENCES categorie(nom)                          
+);
+
+
+
+
+CREATE TABLE panier(
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   Prix INT,
+   Quantite INT,
+   status INT DEFAULT 0 CHECK (statut IN (0, 1)),
+   id_utilisateur INT,
+   FOREIGN KEY (id_utilisateur) REFERENCES utilisateurs(id),
+   id_produit INT,
+   FOREIGN KEY (id_produit) REFERENCES produits(id)
+);
+
+CREATE TABLE image_events(
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   chemin_acces VARCHAR(255),
+   id_utilisateur INT,
+   FOREIGN KEY (id_utilisateur) REFERENCES utilisateurs(id),
+   id_Evenements INT,
+   FOREIGN KEY (id_Evenements) REFERENCES evenements(id)
+);
+
+CREATE TABLE Likes(
+   id_utilisateur INT,
+   FOREIGN KEY (id_utilisateur) REFERENCES utilisateurs(id),
+   id_Image_events INT,
+   FOREIGN KEY (id_Image_events) REFERENCES image_events(id)
+);
+
+CREATE TABLE commentaire(
+   description VARCHAR(255),
+   id_utilisateur INT,
+   FOREIGN KEY (id_utilisateur) REFERENCES utilisateurs(id),
+   id_image_events INT,
+   FOREIGN KEY (id_image_events) REFERENCES image_events(id)
+
+);
+
+   
+  
+
+
+
+
+   
+   
+   
+   
+
+   
+
+
+
+ 
+
