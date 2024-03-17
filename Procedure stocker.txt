@@ -1,0 +1,187 @@
+                PROCEDURE STOCKER
+
+
+                      PROCEDURE UTILISATEUR
+
+CREATE PROCEDURE ajoutUtilisateur(
+    U_pseudo VARCHAR(255),
+    U_email VARCHAR(255),
+    U_password VARCHAR(255),
+    U_statut INT
+)
+
+BEGIN
+    INSERT INTO utilisateurs (pseudo, email, password, statut)
+    VALUES (U_pseudo, U_email, U_password, U_statut);
+END;
+
+
+DELIMITER $$
+
+CREATE PROCEDURE supprimer_utilisateur(IN pseudo VARCHAR(255))
+BEGIN
+    DELETE FROM utilisateurs WHERE pseudo = pseudo;
+END;
+
+
+
+
+
+
+                 PROCEDURE EVENEMENTS
+
+
+CREATE PROCEDURE ajoutEvenements(
+    E_nom VARCHAR(255),
+    E_description VARCHAR(255),
+    E_date_debut DATE,
+    E_date_fin  DATE
+)
+
+BEGIN
+    INSERT INTO Evenements (nom, description,date_debut,date_fin)
+    VALUES (E_nom,  E_description, E_date_debut, E_date_fin);
+END;
+
+
+DELIMITER $$
+
+CREATE PROCEDURE get_all_evenements()
+BEGIN
+    SELECT *, DATE_FORMAT(date_debut, '%Y-%m-%d') AS formatted_date_debut, DATE_FORMAT(date_fin, '%Y-%m-%d') AS formatted_date_fin
+    FROM evenements;
+END;
+
+
+
+                   PROCEDURE PRODUITS
+
+CREATE PROCEDURE ajoutProduit
+    p_nom VARCHAR(255),
+    p_Prix INT,
+    p_description VARCHAR(255),
+    p_image VARCHAR(255),
+    p_nom_categorie VARCHAR(255)
+AS
+BEGIN
+    INSERT INTO Produits (nom, Prix, description, image, nom_categorie)
+    VALUES (p_nom, p_Prix,  p_description, p_nom_categorie)
+END
+
+
+DELIMITER //
+
+CREATE PROCEDURE get_all_produits()
+BEGIN
+    SELECT * FROM produits;
+END //
+
+DELIMITER ;
+
+
+
+DELIMITER $$
+
+CREATE PROCEDURE get_produits_by_categorie(IN categorie VARCHAR(255))
+BEGIN
+    SELECT * FROM produits WHERE nom_categorie = categorie;
+END;
+
+
+DELIMITER $$
+
+CREATE PROCEDURE get_quantites_par_categorie()
+BEGIN
+    SELECT nom_categorie, SUM(quantite) AS quantite_totale
+    FROM produits
+    GROUP BY nom_categorie;
+END;
+
+
+
+
+
+
+
+                 PROCEDURE CATEGORIE
+
+CREATE PROCEDURE ajoutCategorie(
+    c_nom VARCHAR(255)
+)
+BEGIN
+    INSERT INTO categorie (nom)
+    VALUES (c_nom);
+END;
+
+
+
+
+
+CREATE PROCEDURE ajoutidee (
+    B_nom VARCHAR(255),
+     B_description VARCHAR(255),
+     B_pseudo INT
+)
+BEGIN
+    INSERT INTO Boite_idee (nom, description, pseudo)
+    VALUES (B_nom, B_description, B_pseudo);
+END;
+
+
+
+
+                      PROCEDURE PANIER
+
+DELIMITER $$
+
+CREATE PROCEDURE ajoutPanier (
+    N_Prix INT,
+    N_Quantite INT,
+    N_id_utilisateur INT,
+    N_id_produit INT,
+    N_status INT
+)
+
+BEGIN
+    INSERT INTO panier (Prix, Quantite, id_utilisateur, id_produit, status)
+    VALUES (N_Prix, N_Quantite, N_id_utilisateur, N_id_produit,N_status);
+END;
+
+
+DELIMITER $$
+
+CREATE PROCEDURE delete_panier(IN id_utilisateur INT, IN id_produit INT)
+BEGIN
+    DELETE FROM panier WHERE id_utilisateur = id_utilisateur AND id_produit = id_produit;
+END;
+
+
+
+
+
+
+CREATE PROCEDURE InsertImageEvents (
+     p_chemin_acces VARCHAR(255),
+     p_id_utilisateur INT,
+    p_id_Evenements INT
+)
+BEGIN
+    INSERT INTO Image_events (chemin_acces, id_utilisateur, id_Evenements)
+    VALUES (p_chemin_acces, p_id_utilisateur, p_id_Evenements);
+END;
+
+
+
+
+
+
+
+CREATE PROCEDURE InsertLike (
+    IN p_id_utilisateur INT,
+    IN p_id_Image_events INT
+)
+BEGIN
+    INSERT INTO Like (id_utilisateur, id_Image_events)
+    VALUES (p_id_utilisateur, p_id_Image_events);
+END;
+
