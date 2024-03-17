@@ -1,0 +1,120 @@
+
+body {
+    font-family: Poppins, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #111111;
+    font-family: Poppins, sans-serif;
+
+}
+
+h2 {
+    color: #666;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #fdda00;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #fdda00;
+    color: #111111;
+    border: none;
+}
+
+.save-button {
+    background-color: #fdda00;
+    color: #111111;
+    border: none;
+    margin-left: 400px;
+}
+
+#profile-name {
+    margin-top: 10px;
+    align-items: center;
+
+}
+
+#profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#profile-form,
+#password-form {
+    margin-top: 20px;
+}
+
+#profile-form h2,
+#password-form h2 {
+    margin-bottom: 10px;
+}
+.rectangle1 {
+    width: 1000px;
+    height: 50px;
+    padding: 20px;
+    background-color: #fdda00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+    font-family: Poppins, sans-serif;
+}
+
+#header1 {
+    display: flex;
+    width: 13cm;
+    height: 3cm;
+    font-family: Poppins, sans-serif;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+}
+
+.image-container {
+
+    width: 50px;
+    height: 50px;
+    overflow: hidden; /* masque les parties dépassant du cercle */
+    margin-right:60px;
+}
+
+.image-container img {
+    width: 100%; /* assure que l'image remplit le conteneur */
+    height: 100%; /* assure que l'image remplit le conteneur */
+    object-fit: cover; /* ajuste la taille de l'image pour remplir le conteneur */
+    color: #111111;
+
+}
+
+#header1 h1 {
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<div class="container">
+    <div class="rectangle1">
+        <div class="image-container">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgVJREFUSEvd1svLTlEUx/HPSyGXUHqNDEgptwFFed2SIklKhv4FAyVKDCjKzOT9CwyVJEnkkpgoFAMDuUVuRbnPOEtbPZ3Oec5z9nPqLWvy9HT2Xt/9W2vttfaICbKRCeLqAjwDK7Ecs/EId/Ctn6hhwQdwGpNLkK/pMC/q4LngWTiLXRWOQ+k23O1a8STcwMYKx1+wFfeaaidH8SkcrnD8GVvwsAka39uCF+BVheNP2JwKq447HT/+fWwLPorjNeAxPKmhzi1Scz3l/kOO4kvYUeP8Y8p7GT6viMZNLMO+VJStQ30b6/vkMODr8DStmY9bWJL+Hyuu3okcxeeKPO5pKJ532IC4y3GlFvWsP4KTOeD9ODNA1b7F9yKsi0trd+NCDjjCHOHOsV/FoaPI4rdVjqMPB3RFDjUpDcV/bdDrNDMVyapMaBTdWjxvAw7otbQxh/sSO/G4d3OT4ug2cfHjtG3tN8aLIjuIn+XN/cABvdJwb98UTg+lwbAGC/EgHfZ8Mb3u1522DjwNVweARpuMULa2KvCUIrSX06SpcxiwTbnQqqqOWXuxTz+OPQGN+/y6tcyeDWXF25PaOp/xlIl2OBS0SvGc9Hoot7pYG40/Zm4U1NBWlePR9LRZ2uP9WZo674cmNnSuUB5NYzU6hza1zKnYm3psjLhOralzdQpr0zL/P/AfcbFXHyMrzgQAAAAASUVORK5CYII="/>
+    </div>
+        <h1>OPTIONS</h1>
+    </div>
+
+</div>
+
+<body>
+<h2>Profil</h2>
+<div>
+    <div class="profile-container">
+        <div class="profile-info">
+    <img id="profile-image" src="zoro.jpg" alt="Image de profil">
+            <span id="first-name">PEDJIOBAH</span>
+            <span id="last-name">Jefferson</span>
+        </div>
+    </div>
+</div>
+<button id="edit-profile">Modifier le profil</button>
+<button id="change-password">Changer le mot de passe</button>
+
+<div id="profile-form" style="display: none;">
+    <h3>Modifier le profil</h3>
+    <label for="new-name">Nouveau nom :</label>
+    <input type="text" id="new-name">
+    <br>
+    <label for="new-image">Nouvelle image :</label>
+    <input type="file" id="new-image">
+    <br>
+    <button id="save-profile">Enregistrer</button>
+</div>
+
+<div id="password-form" style="display: none;">
+    <h4>Changer le mot de passe</h4>
+    <label for="current-password">Mot de passe actuel :</label>
+    <input type="password" id="current-password">
+    <br>
+    <label for="new-password">Nouveau mot de passe :</label>
+    <input type="password" id="new-password">
+    <br>
+    <label for="confirm-password">Confirmer le nouveau mot de passe :</label>
+    <input type="password" id="confirm-password">
+    <br>
+    <button id="save-password">Enregistrer</button>
+</div>
+
+<h2>Parametres generaux</h2>
+<label for="theme">Theme :</label>
+<select id="theme">
+    <option value="light"><button id="light-theme-button">Clair</button></option>
+    <option value="dark"><button id="dark-theme-button">Sombre</button></option>
+</select>
+
+<label for="language">Langue :</label>
+<select id="language">
+    <option value="en">Anglais</option>
+    <option value="fr">Francais</option>
+</select>
+
+<label>
+    <input type="checkbox" id="notifications">Notifications
+</label>
+
+<button class="save-button">Enregistrer les parametres</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
