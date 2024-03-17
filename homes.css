@@ -1,0 +1,164 @@
+
+
+
+
+*{
+    
+    transition: 0.5s;
+}
+
+
+body{
+    background-color: aqua;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background{
+    position: absolute;
+    z-index: 2;
+    width: 80vv;
+    height: 85vh;
+}
+
+header{
+    position: relative;
+    z-index: 3;
+}
+
+.BDE{
+    margin-top: 30px;
+    background-color: rgb(185, 182, 182);
+    width: 40vh;
+    text-align: center;
+}
+
+main{
+    position: relative ;
+    z-index: 4;
+
+}
+
+
+.Add{
+    margin-top: 30px;
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;   
+}
+
+.nom{
+    background-color: yellow;
+    border-radius: 10px;   
+    height: 40px;
+    width: 320px;
+    outline: none;    
+
+}
+
+.desc{
+    background-color: yellow;   
+    outline: none;
+    height: 80px;  
+    margin-bottom: 20px; 
+    padding-top: 10px;
+}
+
+.prix{
+    background-color: white;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    color: black;
+    margin-bottom: 8%;
+}
+
+
+.envoyez{
+
+    background-color: yellow;
+    border-radius:  10px;
+    outline: none;
+    margin-bottom: 10%;
+    height: 40px;
+    width: 200px;
+    margin-left: 150px;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    
+}
+
+
+.input_container > *{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius:  10px;
+    padding-left: 15px;
+}
+
+  
+  .drop-zone {
+    max-width: 322px;
+    width: 1000px; 
+    height: 150px; 
+    top: 399px;
+    border-radius: 10px 20px 10px 20px ;
+    background-color: white;
+    /* margin-left: -90px; */
+    cursor: pointer;
+    border: 2px solid black;
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+  }
+ 
+  .drop-zone__prompt{
+    font-size: 15px;
+    padding-top: 7px;
+  }
+  
+  .drop-zone--over{
+   border-style: solid;
+  }
+  .drop-zone__input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  }
+  .drop-zone--prompt{
+  display: flex;
+  /* justify-content: center;
+  text-align: center;
+  align-items: left; */
+  }
+  .drop-zone__thumb{
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccc;
+  background-size: cover;
+  /* position: relative; */
+} 
+
+.x > *{
+    margin-top: 30px;
+    margin-left: -15%;
+    padding: 10px;
+}
+.y{
+    display: contents;
+}       
