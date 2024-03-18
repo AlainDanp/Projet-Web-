@@ -1,0 +1,78 @@
+.body {
+    font-family: Poppins, sans-serif;
+}
+
+#header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4cm;
+}
+
+.container1  {
+    margin-left: 400px;
+    font-family: Poppins, sans-serif;
+
+}
+
+.rectangle1 {
+    width: 15cm;
+    height: 2cm;
+    background-color: yellow;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1cm auto;
+    font-family: Poppins, sans-serif;
+}
+
+.rectangle2 {
+    width: 10cm;
+    height: 2cm;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1cm auto ;
+    background-color: yellow;
+    font-family: Poppins, sans-serif;
+
+}
+.rectangle h2 {
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+}
+
+#rectangle1 {
+    margin-bottom: 3cm;
+    font-family: Poppins, sans-serif;
+}
+
+#content {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+.download-button{
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #fdda00;
+    color: #111111;
+    margin-left: 500px;
+    font-family: Poppins, sans-serif;
+}
+
+.download-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    font-family: Poppins, sans-serif;
+}
+
+.download-button:hover {
+    background-color: orange;
+}
