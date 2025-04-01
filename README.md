@@ -25,5 +25,4 @@ Il permet de centraliser les actualités, les événements, les activités, et l
 
 ---
 
-## 📁 Structure du projet
 
